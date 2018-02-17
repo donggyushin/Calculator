@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+		<!-- application 패키지 안에 있는 controller 파일과 컨트롤러 관계를 매치시켜준다. -->
+<VBox fx:controller="application.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff3b" height="80.0" stroke="BLACK" strokeType="INSIDE" width="350.0" StackPane.alignment="CENTER" />
+            
+            
+            <!-- 컨트롤러 내부에서 아이디 값을 정해줌.이제 result라는 변수 이름으로 접근 가능 -->
+            <Text fx:id="result" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="200.0">
+         <children>																			<!-- 버튼을 눌렀을때 작동되는 함수 이름 -->
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="7" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="8" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="9" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="/" onAction="#operator">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="4" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="5" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="6" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="*" onAction="#operator">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="2" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="3" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="+" onAction="#operator">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="0" onAction="#operand">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="=" onAction="#operator">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="-" onAction="#operator">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
